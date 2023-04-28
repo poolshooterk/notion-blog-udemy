@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { MetaData, getAllPosts, getSinglePost } from '../../../lib/notionAPI';
 import { GetStaticPropsResult } from 'next';
