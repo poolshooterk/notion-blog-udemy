@@ -45,8 +45,8 @@ export const getAllPosts = async () => {
 
 const getPageMetaData = (post: any): MetaData => {
 
-  const getTags = (tags): string[] => {
-    const allTags = tags.map((tag) => {
+  const getTags = (tags:any): string[] => {
+    const allTags = tags.map((tag: any) => {
       return tag.name;
     });
 
@@ -59,7 +59,8 @@ const getPageMetaData = (post: any): MetaData => {
     description: post.properties.Description.rich_text[0].plain_text as string,
     date: post.properties.Date.date.start as string,
     slug: post.properties.Slug.rich_text[0].plain_text as string,
-    tags: getTags(post.properties.Tags.multi_select as string[])
+    tags: getTags(post.properties.Tags.multi_select as string[]),
+    isPagenationPage: false
   }
 }
 
