@@ -35,6 +35,7 @@ export const getStaticProps = async ({
 };
 
 const Post = ({ metadata, markdown }: Props) => {
+  // コメント
   return (
     <section className="container lg:px-2 px-5 h-screen lg:w-2/5 mt-20">
       <h2 className="w-full text-2xl font-medium">{metadata.title}</h2>
