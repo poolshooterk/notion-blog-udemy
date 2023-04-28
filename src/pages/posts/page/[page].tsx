@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps = async (
       numberOfPage,
       allTags,
     },
-    revalidate: 60 * 60 * 6,
+    revalidate: 10,
   };
 };
 

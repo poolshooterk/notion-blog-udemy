@@ -31,7 +31,7 @@ export const getStaticProps = async ({
       metadata: post.metadata,
       markdown: post.markdown,
     },
-    revalidate: 60 * 60 * 6,
+    revalidate: 10,
   };
 };
 

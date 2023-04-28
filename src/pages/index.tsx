@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps = async (): Promise<
       fourPosts,
       allTags,
     },
-    revalidate: 60 * 60 * 6,
+    revalidate: 10,
   };
 };
 
